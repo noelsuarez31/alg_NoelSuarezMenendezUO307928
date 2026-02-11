@@ -1,2 +1,2 @@
-set path=C:\Program Files\Java\<jdk>\bin
-set classpath=C:\Users\uo307928\Desktop\alg_NoelSuarezMenendezUO307928\p11
+set path=C:\Program Files\Java\jdk-25.0.2\bin
+set classpath=C:\Users\Usuario\Desktop\alg_NoelSuarezMenendezUO307928
