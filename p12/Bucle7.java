@@ -1,15 +1,17 @@
 package p12;
 
-// O(n^3)
+// O(n^4)
 
-public class Bucle4 {
+public class Bucle7 {
 
-	public static long bucle4(int n) {
+	public static long bucle7(int n) {
 		long cont = 0;
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= i; j++) {
-				for (int k = 1; k <= j; k++) {
-					cont++;
+		for (int i = 1; i <= n; i+=2) {
+			for (int j = 1; j <= n; j+=2) {
+				for (int k = 1; k <= n; k+=2) {
+					for (int l = 1; l <= n; l+=2) {
+						cont++;
+					}
 				}
 			}
 		}
@@ -29,7 +31,7 @@ public class Bucle4 {
 			t1 = System.currentTimeMillis();
 
 			for (int repeticiones = 1; repeticiones <= nVeces; repeticiones++){
-				c = bucle4(n);
+				c = bucle7(n);
 			}
 			t2 = System.currentTimeMillis();
 

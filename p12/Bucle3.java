@@ -1,4 +1,4 @@
-package p12;
+ package p12;
 
 public class Bucle3 {
 	public static long bucle3(long n) {
