@@ -90,15 +90,12 @@ public class PuntosDyV {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length == 0) {
-            System.out.println("Uso: java p3p.PuntosDyV nombreFichero");
-            return;
-        }
 
         List<Punto> puntos = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(args[0]));
         int n = Integer.parseInt(br.readLine().trim());
 
+        // Leer la matriz
         String linea;
         while ((linea = br.readLine()) != null) {
             String[] partes = linea.split(",");
@@ -106,10 +103,13 @@ public class PuntosDyV {
         }
         br.close();
 
+        // Ordenar la matriz por x
         puntos.sort(Comparator.comparingDouble(p -> p.x));
 
+        // Llamadas recursivas 
         Par resultado = closestPair(puntos);
 
+        // Revisar límite inicial
         System.out.printf("PUNTOS MÁS CERCANOS: [%.6f, %.6f] [%.6f, %.6f]%n", 
                           resultado.p1.x, resultado.p1.y, resultado.p2.x, resultado.p2.y);
         System.out.printf("SU DISTANCIA MÍNIMA= %.6f%n", resultado.dist);
