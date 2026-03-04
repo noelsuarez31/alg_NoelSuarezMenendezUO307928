@@ -6,17 +6,17 @@ public class Division3
 static long cont;
 
 public static void rec3 (int n)
-	{
-		if (n<=0) 
-			cont++;
-		else
-		{ 
-			cont++ ; // O(1)    
-			rec3 (n/2);
-			rec3 (n/2);
-		}
-		   
+{
+	if (n<=0) 
+		cont++;
+	else
+	{ 
+		cont++ ; // O(1)    
+		rec3 (n/2);
+		rec3 (n/2);
 	}
+		
+}
 	
 
 public static void main (String arg []) 
