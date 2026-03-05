@@ -3,7 +3,7 @@ package p3p;
 import java.io.*;
 import java.util.*;
 
-public class PuntosDyV {
+public class PuntosDyVTiempos {
 
    // Clase punto
     static class Punto {
@@ -35,8 +35,13 @@ public class PuntosDyV {
         // Ordenar por X
         puntos.sort(Comparator.comparingDouble(p -> p.x));
 
+        long t1 = System.currentTimeMillis();
+
         Resultado res = buscarDistanciaMinima(puntos);
 
+        long t2 = System.currentTimeMillis();
+
+        System.out.println("TIEMPO_DyV(ms)=" + (t2 - t1));
         System.out.printf("PUNTOS MÁS CERCANOS: [%.6f, %.6f] [%.6f, %.6f]%n",
                 res.p1.x, res.p1.y, res.p2.x, res.p2.y);
         System.out.printf("DISTANCIA MÍNIMA = %.6f%n", res.distancia);

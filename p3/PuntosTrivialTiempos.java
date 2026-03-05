@@ -1,6 +1,7 @@
 package p3p;
 
 import java.util.*;
+import java.io.*;
 
 public class PuntosTrivialTiempos {
     static class Punto {
@@ -12,10 +13,6 @@ public class PuntosTrivialTiempos {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length == 0) {
-            System.out.println("Uso: java p3p.PuntosTrivial nombreFichero");
-            return;
-        }
 
         List<Punto> puntos = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(args[0]));
@@ -49,7 +46,7 @@ public class PuntosTrivialTiempos {
         }
 
         long t2 = System.currentTimeMillis();
-        System.out.println("n=" + n + "\tTIEMPO_DyV(ms)=" + (t2 - t1));
+        System.out.println("n=" + n + "\tTIEMPO(ms)=" + (t2 - t1));
 
         System.out.printf("PUNTOS MÁS CERCANOS: [%.6f, %.6f] [%.6f, %.6f]%n", 
                           p1.x, p1.y, p2.x, p2.y);

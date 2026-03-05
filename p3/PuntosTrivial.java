@@ -13,10 +13,6 @@ public class PuntosTrivial {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length == 0) {
-            System.out.println("Uso: java p3p.PuntosTrivial nombreFichero");
-            return;
-        }
 
         List<Punto> puntos = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(args[0]));
