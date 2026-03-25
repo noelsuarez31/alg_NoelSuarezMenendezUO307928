@@ -18,7 +18,7 @@ public class FerryTests {
 	@Test
 	public void test00() {
 		System.out.printf("\n\nCASE 00\n");
-		loadData("src/main/java/labs/en/_26/algteacher/s5/test00.txt");		
+		loadData("C:/Users/Usuario/Desktop/alg_NoelSuarezMenendezUO307928/p5/test00.txt");		
 		Ferry problem = new Ferry(length, vehicles);
 		problem.printData();
 		problem.run();
@@ -30,7 +30,7 @@ public class FerryTests {
 	@Test
 	public void test01() {
 		System.out.printf("\n\nCASE 01\n");
-		loadData("src/main/java/labs/en/_26/algteacher/s5/test01.txt");		
+		loadData("C:/Users/Usuario/Desktop/alg_NoelSuarezMenendezUO307928/p5/test01.txt");		
 		Ferry problem = new Ferry(length, vehicles);
 		problem.printData();
 		problem.run();
@@ -42,7 +42,7 @@ public class FerryTests {
 	@Test
 	public void test02() {
 		System.out.printf("\n\nCASE 02\n");
-		loadData("src/main/java/labs/en/_26/algteacher/s5/test02.txt");		
+		loadData("C:/Users/Usuario/Desktop/alg_NoelSuarezMenendezUO307928/p5/test02.txt");		
 		Ferry problem = new Ferry(length, vehicles);
 		problem.printData();
 		problem.run();
@@ -54,7 +54,7 @@ public class FerryTests {
 	@Test
 	public void test03() {
 		System.out.printf("\n\nCASE 03\n");
-		loadData("src/main/java/labs/en/_26/algteacher/s5/test03.txt");		
+		loadData("C:/Users/Usuario/Desktop/alg_NoelSuarezMenendezUO307928/p5/test03.txt");		
 		Ferry problem = new Ferry(length, vehicles);
 		problem.printData();
 		problem.run();
@@ -66,7 +66,7 @@ public class FerryTests {
 	@Test
 	public void test04() {
 		System.out.printf("\n\nCASE 04\n");
-		loadData("src/main/java/labs/en/_26/algteacher/s5/test04.txt");		
+		loadData("C:/Users/Usuario/Desktop/alg_NoelSuarezMenendezUO307928/p5/test04.txt");		
 		Ferry problem = new Ferry(length, vehicles);
 		problem.printData();
 		problem.run();
