@@ -54,7 +54,7 @@ public class AlmacenajeContenedores{
     }
 
     private void mostrarSolucion() {
-        System.out.println("Lista de contenedores y objetos contenidos:\n");
+        System.out.println("\nLista de contenedores y objetos contenidos:\n");
 
         int i = 1;
         for (List<Integer> cont : mejorDistribucion) {
@@ -90,10 +90,12 @@ public class AlmacenajeContenedores{
             }
             return; // Acaba con la ejecución del backtracking en este punto, si agoto
         }
-        // Podamos: si size de contenedores > mejorK
-        if(contenedores.size() >= mejorK)
-            return; 
 
+        // Podamos: si size de contenedores > mejorK
+        if(contenedores.size() >= mejorK){    // Comento este if para las mediciones sin  poda
+            numLlamadas--; // Si entra por la poda no cuenta la llamada
+            return; 
+        }
         // Probar a meter en contenedores existentes
         for(int i = 0; i < contenedores.size(); i++){
             if(sum(contenedores.get(i)) + conjuntoS[indexObject] <= capacidadC){

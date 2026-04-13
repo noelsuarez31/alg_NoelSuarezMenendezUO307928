@@ -7,9 +7,9 @@ public class AlmacenajeContenedoresTiempos {
 
     public static void main(String[] args) {
 
-        System.out.println("Test\tTiempo (ms)\n");
+        System.out.println("Test\t\tTiempo (ms)\n");
 
-        for (int i = 0; i <= 9; i++) {
+        for (int i = 0; i <= 9; i++) { // Para probar los test06.txt y test07.txt sin optimización puse for (int i = 6; i <= 7; i++), porque el t€st05.txt genera tiempos muy altos
 
             String nombreArchivo = String.format("test%02d.txt", i);
 
