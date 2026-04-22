@@ -21,14 +21,13 @@ public class AlmacenajeContenedoresRyP{
         this.conjuntoS = toS;
         Arrays.sort(this.conjuntoS, Collections.reverseOrder()); // Heurístico de construcción
         // Llamar a función que calcule el mejorK
-
         this.mejorK = calcularMejorK(conjuntoS);
     }
 
     private int calcularMejorK(Integer[] conjuntoS) {
         // Calcular mejorK haciendo la suma por pares y, si el resto de la división de la suma entre la capacidadC es mayor que 0, sumar 1 a la división
         int mejorK = 0;
-        for(int i = 0; i < conjuntoS.length; i+=2){
+        for(int i = 0; i + 1 < conjuntoS.length; i+=2){
             int suma = 0;
             suma = conjuntoS[i] + conjuntoS[i+1];
             if(suma % capacidadC > 0){
