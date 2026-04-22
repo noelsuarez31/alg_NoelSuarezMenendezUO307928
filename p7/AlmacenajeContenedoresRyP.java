@@ -36,7 +36,11 @@ public class AlmacenajeContenedoresRyP{
             mejorK += suma / capacidadC;
         }
         if(conjuntoS.length%2 != 0){
-            mejorK++;
+            int suma = conjuntoS[conjuntoS.length-1];
+            if (suma % (capacidadC/2) > 0) {
+                mejorK++;
+            }
+            mejorK += suma / (capacidadC/2);
         }
         return mejorK;
     }
