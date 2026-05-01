@@ -81,7 +81,7 @@ public class PuntosDyV {
         // Mejor resultado de ambos lados
         Resultado mejor = (izqRes.distancia < derRes.distancia) ? izqRes : derRes;
 
-        // Aquío gracias a la recursividad ya se ha comprobado la menor distancia dentro de cada mitad
+        // Aquí gracias a la recursividad ya se ha comprobado la menor distancia dentro de cada mitad
         double d = mejor.distancia;
 
         // Comprobación de la franja de la que hablamos en clase

@@ -1,6 +1,6 @@
 package p2;
 
-/* Esta clase mide tiempos del metodo Seleccion
+/* Esta clase mide tiempos del metodo Inserción
 para los 3 supuestos de orden inicial (ordenado, inverso y aleatorio)
 en el comando de ejecucion hay que poner la opcion elegida y
 despues hay que poner el numero de repeticiones deseado */
